@@ -31,7 +31,7 @@ h2.first{
     color: var(--font-color-main);
     font-size: 2.2rem;
 }
-h1,h2,h3{
+h1,h2,h2.first{
   font-family: "Poppins", sans-serif;
   font-weight: 700;
   margin: 10px 0;
@@ -40,7 +40,7 @@ h1,h2,h3{
     font-size: 2.6rem;
 }h2{
     font-size:22px;
-}h3{
+}h2.first{
     font-size:50px;
 }
 p{
@@ -166,7 +166,7 @@ media
     h1{
         font-size: 2rem;
     }
-    h3{
+    h2.first{
         font-size: 3rem;
     }
     .counter{
@@ -174,11 +174,26 @@ media
         
     }
 }
+@media screen and (max-width: 700px){
+    .midle-section{
+        flex-direction: column !important;
+    }.midle-section:nth-child(2){
+        flex-direction: column-reverse!important;
+    }
+    .midle-section .f2{
+        width: 90%;
+    }.midle-section p{
+        width: 100% ;
+    }.just-photo{
+        width: 75%;
+    }
+    
+}
 @media screen and (max-width: 614px){
     h1{
         font-size: 1.5rem;
     }
-    h3{
+    h2.first{
         font-size: 2.4rem;
     }
     .counter{
@@ -190,7 +205,7 @@ media
     h1{
         font-size: 1.1rem;
     }
-    h3{
+    h2.first{
         font-size: 2rem;
     }
     .counter{
