@@ -1,0 +1,215 @@
+:root{
+    --bg-color-main: #fff;
+    --bg-color-main2: #f6fbff;
+    --bg-color-main3: #00252e;
+    
+    --logo-color-main: #000;
+
+    --font-color-main: #00252e;
+    --font-color-main2: #868b8f;
+    --font-color-main3: #fff;
+
+    --bt-main-color: #fe52c0;
+    --bt-main-color-hover:#ff8ed6;
+}
+*{
+    margin: 0;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 400;
+}
+.f{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+.f2{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+.jc{
+    justify-content: center;
+}
+.ja{
+    justify-content: space-around;
+}
+nav{
+    background-color: var(--bg-color-main);
+    padding: 30px 30px ;
+}
+nav [type="button"]{
+    padding: 4px 10px;
+    background-color: transparent;
+    border: 1px solid var(--bt-main-color);
+    border-radius: 15px;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    -ms-border-radius: 15px;
+    -o-border-radius: 15px;
+    color: var(--bt-main-color);
+    transition: all .4s linear;
+    -webkit-transition: all .4s linear;
+    -moz-transition: all .4s linear;
+    -ms-transition: all .4s linear;
+    -o-transition: all .4s linear;
+}nav [type="button"]:hover{
+    background-color: transparent;
+    color: var(--bt-main-color);
+    box-shadow: 0 0 1px 1px #ff8ed68f;
+}
+.logo{
+    width: 120px;
+}
+
+
+
+
+
+
+
+
+.border{
+    width: 100%;
+    background-size: contain;
+    height: 156px;
+    background-repeat: no-repeat;
+}
+.footer-img{
+    background-image: url(images/bg-footer-top-desktop.svg);
+    background-position: bottom;
+
+}
+
+footer [type="button"]{
+    background-color: var(--bt-main-color);
+    border: none;
+    color: #fff;
+    padding: 10px 30px;
+    margin: 30px 0;
+    border-radius: 50px;
+    -webkit-border-radius: 50px;
+    -moz-border-radius: 50px;
+    -ms-border-radius: 50px;
+    -o-border-radius: 50px;
+    cursor: pointer;
+}
+.foot-cont{
+    background-color: var(--bg-color-main3);
+    padding: 0 5%;
+    flex-wrap: wrap;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+footer ,footer a{
+    color: var(--font-color-main3);
+}
+.footr-logo ,.footr-logo a{
+    text-decoration: none;
+    font-size: 42px;
+}
+
+.Group1{
+    justify-content: space-between;
+    align-items: center;
+    width: 45%;
+
+}
+.Group1-contant{
+    justify-content: center;
+    align-items: center;
+}
+.Group1 p,.Group2 p{
+    text-align: left;
+    margin: 10px 0;
+    width: 70%;
+}
+.Group1 p,.Group2 p{
+    text-align: left;
+    margin: 30px 0;
+    width: 80%;
+}
+.Group1 .contact img{
+    margin: 0 20px 0 0;
+
+}.Group1 span{
+    color: var(--bg-color-main);
+
+}
+
+
+
+
+
+
+
+/*
+
+media
+
+*/
+.Group2{
+    justify-content: flex-start;
+    width: 45%;
+
+}
+
+input{
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+input:focus{
+    outline: none;
+}
+
+.Group3{
+    font-size: 30px;
+    margin: 10px 0;
+}.Group3 i{
+    margin: 0  7px;
+} i[class$="twitter"]:hover{
+    color: #00caff;
+} i[class$="facebook"]:hover{
+    color: #0866ff;
+}i[class$="instagram"]:hover{
+    color: pink;
+    
+}
+
+
+
+@media screen and (max-width: 650px){
+    .Group2 div:nth-child(2){
+        flex-direction: column;
+        align-items: flex-end;
+    }
+}
+@media screen and (max-width: 430px){
+
+    .fir-two-group{
+        flex-direction: column-reverse; 
+    }
+    .fir-two-group .Group2{
+    justify-content: stretch;
+    width: 90%;
+    }
+    .Group2 [type="button"]{
+        padding: 7px 24px;
+
+    }
+    .fir-two-group .Group1{
+        justify-content: stretch;
+        width: 100%;
+        }
+    .fir-two-group .Group-contant{
+        justify-content: stretch;
+        width: 90%;
+        }
+        
+} 
