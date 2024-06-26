@@ -82,17 +82,17 @@ nav [type="button"]{
 
 }
 
-footer [type="button"]{
+footer button{
     background-color: var(--bt-main-color);
     border: none;
     color: #fff;
-    padding: 10px 30px;
+    padding: 5px 30px;
     margin: 30px 0;
-    border-radius: 50px;
-    -webkit-border-radius: 50px;
-    -moz-border-radius: 50px;
-    -ms-border-radius: 50px;
-    -o-border-radius: 50px;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
     cursor: pointer;
 }
 .foot-cont{
@@ -103,7 +103,8 @@ footer [type="button"]{
     flex-direction: row;
     align-items: flex-start;
     justify-content: space-between;
-}
+}.Group2 h2{
+justify-content: flex-start;}
 footer ,footer a{
     color: var(--font-color-main3);
 }
@@ -157,7 +158,8 @@ media
 
 }
 
-input{
+footer input{
+    padding: 5px 8px 5px 8px;
     border-radius: 5px;
     -webkit-border-radius: 5px;
     -moz-border-radius: 5px;
@@ -170,7 +172,7 @@ input:focus{
 
 .Group3{
     font-size: 30px;
-    margin: 10px 0;
+    margin: 10px 0 20px 0;
 }.Group3 i{
     margin: 0  7px;
 } i[class$="twitter"]:hover{
@@ -188,6 +190,14 @@ input:focus{
     .Group2 div:nth-child(2){
         flex-direction: column;
         align-items: flex-end;
+    }
+    form{
+        flex-direction: column !important;
+        justify-content: stretch!important;
+        align-items: center !important;
+        
+    }form [type="email"] ,form div , form button{
+        width: 94% !important;
     }
 }
 @media screen and (max-width: 430px){
@@ -211,5 +221,5 @@ input:focus{
         justify-content: stretch;
         width: 90%;
         }
-        
+    
 } 
